@@ -149,6 +149,6 @@ export async function getUserById(c: Context) {
             });
         }
     }catch(error){
-            return c.body(`User not found lapata`, StatusCode.NOTFOUND);
+            return c.body(`User not found`, StatusCode.NOTFOUND);
         }
     }

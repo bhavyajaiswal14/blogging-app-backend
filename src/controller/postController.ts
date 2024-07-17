@@ -89,7 +89,7 @@ export async function getUserPosts(c: Context) {
             posts: res,
         });
     }catch(error){
-        return c.body(`Internal server error vyjgg`, StatusCode.SERVERERR);
+        return c.body(`Internal server error`, StatusCode.SERVERERR);
 }
 }
 
@@ -137,7 +137,7 @@ export async function createPost(c: Context) {
             },
         });
 }catch(error){
-    return c.body(`Internal server error bsdk`, StatusCode.SERVERERR);
+    return c.body(`Internal server error`, StatusCode.SERVERERR);
 }
 }
 
@@ -195,7 +195,7 @@ export async function updatePost(c: Context) {
         },
     });
 }catch(error){
-    return c.body(`Internal server error hi`, StatusCode.SERVERERR);
+    return c.body(`Internal server error`, StatusCode.SERVERERR);
 }
 }
 
